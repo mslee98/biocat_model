@@ -1,13 +1,13 @@
-train: ../train/images
-val: ../valid/images
-test: ../test/images
+train: ./train/images
+val: ./valid/images
+test: ./test/images
 
-nc: 19
-names: ['colony_', 'colony_1', 'colony_10', 'colony_11', 'colony_12', 'colony_13', 'colony_14', 'colony_15', 'colony_2', 'colony_21', 'colony_22', 'colony_26', 'colony_3', 'colony_4', 'colony_5', 'colony_6', 'colony_7', 'colony_8', 'colony_9']
+nc: 1
+names: ['colony']
 
 roboflow:
   workspace: biocatcolony
-  project: biocat_img_label
+  project: biocat_img_labelling
   version: 1
   license: CC BY 4.0
-  url: https://universe.roboflow.com/biocatcolony/biocat_img_label/dataset/1
+  url: https://universe.roboflow.com/biocatcolony/biocat_img_labelling/dataset/1
