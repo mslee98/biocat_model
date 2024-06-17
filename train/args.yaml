@@ -2,7 +2,7 @@ task: detect
 mode: train
 model: yolov8n.pt
 data: C:\Users\USER\PycharmProjects\biocat_model_git/datasets/data.yaml
-epochs: 10
+epochs: 100
 time: null
 patience: 50
 batch: 16

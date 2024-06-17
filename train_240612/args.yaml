@@ -1,5 +1,5 @@
 task: detect
-mode: train
+mode: train_epochs10
 model: yolov8n.pt
 data: C:\Users\USER\PycharmProjects\biocat_model_git/datasets/data.yaml
 epochs: 100
@@ -13,7 +13,7 @@ cache: false
 device: null
 workers: 8
 project: ./
-name: train
+name: train_epochs10
 exist_ok: false
 pretrained: true
 optimizer: auto
@@ -102,4 +102,4 @@ erasing: 0.4
 crop_fraction: 1.0
 cfg: null
 tracker: botsort.yaml
-save_dir: train
+save_dir: train_epochs10

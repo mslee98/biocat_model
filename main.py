@@ -14,8 +14,8 @@ def create_model():
 
     model = YOLO('yolov8n.pt')
 
-    # model.train(data=os.getcwd()+"/datasets/data.yaml",epochs=100, project=save_path)
-    model.train(data=os.getcwd() + "/datasets/data.yaml", epochs=10, project="./")
+    # model.train_epochs10(data=os.getcwd()+"/datasets/data.yaml",epochs=100, project=save_path)
+    model.train(data=os.getcwd() + "/datasets/data.yaml", epochs=100, project="./")
 
     model.export(format='onnx', dynamic=True)
 
